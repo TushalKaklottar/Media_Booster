@@ -47,11 +47,11 @@ class _AudioPageState extends State<AudioPage> {
               "All PlayList",
             ),
           ),
-          Divider(thickness: 3),
+          const Divider(thickness: 3),
           Expanded(
             flex: 12,
               child: Padding(
-                padding: EdgeInsets.all(16),
+                padding:  EdgeInsets.all(16),
                 child: GridView.builder(
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
