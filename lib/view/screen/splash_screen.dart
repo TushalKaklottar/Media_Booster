@@ -16,11 +16,11 @@ class _SplashState extends State<Splash> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
+        decoration:  BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Color(0xFF3F5751),
-              Color(0xFF851C51),
+              Colors.yellow.shade500,
+              Colors.pink.shade300,
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,

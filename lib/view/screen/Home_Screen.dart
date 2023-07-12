@@ -29,18 +29,14 @@ class _Home_ScreenState extends State<Home_Screen>  {
       ),
 
       bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
+        decoration:  BoxDecoration(
           gradient: LinearGradient(colors: [
-            Color(0xffaee8ac),
-            Color(0xffe8e5c3),
-            Color(0xffcdb7e8),
-            Color(0xffacbee8),
-            Color(0xffe6bcd7),
+            Colors.yellow.shade200,
+            Colors.blue.shade200,
+            Colors.green.shade200,
+            Colors.purple.shade200,
           ],
           ),
-          borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(15),
-              topRight: Radius.circular(15)),
         ),
 
         child: SafeArea(
@@ -75,8 +71,8 @@ class _Home_ScreenState extends State<Home_Screen>  {
               onTabChange: (index) {
                 setState(() {
                   _selectedIndex = index;
-                  AudioPage();
-                  VideoPage();
+                  const AudioPage();
+                  const VideoPage();
                 });
               },
             ),
