@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:media_booster/controller/song_provider.dart';
 import 'package:media_booster/modals/song_modals.dart';
 import 'package:media_booster/view/components/audio/audio_detail.dart';
+import 'package:media_booster/view/components/video/video_detail.dart';
 import 'package:media_booster/view/screen/Home_Screen.dart';
 import 'package:media_booster/view/screen/splash_screen.dart';
 import 'package:provider/provider.dart';
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
           'splash': (context) => const Splash(),
           'home': (context) => const Home_Screen(),
           'audio_detail': (context) => const DetailPage(),
+          'video_detail': (context) => const Video_Detail(),
         },
       );
   }

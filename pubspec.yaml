@@ -42,6 +42,8 @@ dependencies:
   google_fonts: any
   carousel_slider: ^4.2.1
   assets_audio_player: ^3.0.6
+  video_player: any
+  chewie: any
 
 dev_dependencies:
   flutter_test:
