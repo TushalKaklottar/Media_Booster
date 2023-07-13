@@ -13,9 +13,9 @@ class _VideoPageState extends State<VideoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.only(top: 80,left: 10,right: 10),
+        padding: const EdgeInsets.only(top: 80,left: 10,right: 10),
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Center(
             child: Column(
               children: allVideos.map(
