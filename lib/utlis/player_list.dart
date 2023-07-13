@@ -63,7 +63,18 @@ List<Map<String,dynamic>> allSongs =[
 List<Map<String,dynamic>> allVideos = [
   {
     "image": "assets/images/juddai.png",
-    "video": "video/1.mp4",
-    "name1" : "Horse ridding",
+    "video": "video/juddai.mp4",
+  },
+  {
+    "image": "assets/images/bandeya.jpg",
+    "video": "video/bandeya.mp4",
+  } ,
+  {
+    "image": "assets/images/dhun.jpg",
+    "video": "video/dhun.mp4",
+  },
+  {
+    "image": "assets/images/kesariya.jpg",
+    "video": "video/kesariya.mp4",
   }
 ];
