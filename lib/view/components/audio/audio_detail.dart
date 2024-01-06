@@ -81,7 +81,7 @@ class _DetailPageState extends State<DetailPage> {
                               )
                             ],
                           ),
-                          SizedBox(height: 50),
+                          const SizedBox(height: 50),
                           Slider(
                             min: 0,
                             max: Provider.of<SongProvider>(context,listen: false).
@@ -98,8 +98,6 @@ class _DetailPageState extends State<DetailPage> {
                                   )
                               );
                             },
-
-
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -3,14 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:media_booster/utlis/player_list.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AudioPage extends StatefulWidget {
+class AudioPage extends StatelessWidget {
   const AudioPage({Key? key}) : super(key: key);
 
-  @override
-  State<AudioPage> createState() => _AudioPageState();
-}
-
-class _AudioPageState extends State<AudioPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,18 +32,17 @@ class _AudioPageState extends State<AudioPage> {
                 autoPlayCurve: Curves.linear,
                 enlargeCenterPage: true,
               ),
-
-                items: images.map(
-                      (e) => Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(e) ,
-            fit: BoxFit.cover,
-          ),
-          borderRadius: BorderRadius.circular(20),
-        ),
-        ),
-                ).toList(),
+              items: images.map(
+                    (e) => Container(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(e) ,
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+              ).toList(),
             ),
             const SizedBox(
               height: 16,
@@ -78,9 +72,9 @@ class _AudioPageState extends State<AudioPage> {
             Expanded(
               flex: 12,
                 child: Padding(
-                  padding:  EdgeInsets.all(16),
+                  padding:  const EdgeInsets.all(16),
                   child: GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
                         mainAxisSpacing: 10,
                         crossAxisSpacing: 10,

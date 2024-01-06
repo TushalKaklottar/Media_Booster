@@ -65,7 +65,7 @@ class _Video_DetailState extends State<Video_Detail> {
                   ),
                 ),
               ),
-              SizedBox(height: 10,),
+              const SizedBox(height: 10,),
               AspectRatio(
                   aspectRatio: 4/2,
                 child: Chewie(
@@ -77,10 +77,5 @@ class _Video_DetailState extends State<Video_Detail> {
         ),
       ),
     );
-  }
-  @override
-  void dispose() {
-    super.dispose();
-    videoPlayerController.dispose();
   }
 }
