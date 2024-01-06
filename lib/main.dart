@@ -1,6 +1,7 @@
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
-import 'package:media_booster/controller/song_provider.dart';
+import 'package:media_booster/controller/song_controller.dart';
+import 'package:media_booster/controller/video_detail_controller.dart';
 import 'package:media_booster/modals/song_modals.dart';
 import 'package:media_booster/view/components/audio/audio_detail.dart';
 import 'package:media_booster/view/components/video/video_detail.dart';
@@ -23,6 +24,7 @@ void main() {
                         currentSliderValue: const Duration(seconds: 0),
                       ))),
           ChangeNotifierProvider(create: (context) => TabControllerProvider()),
+          ChangeNotifierProvider(create: (_) => VideoDetailsController('initial_video_asset_path')),
         ],
       child: const MyApp(),
     )
@@ -44,7 +46,7 @@ class MyApp extends StatelessWidget {
           'splash': (context) => const Splash(),
           'home': (context) =>  HomeScreen(),
           'audio_detail': (context) => const DetailPage(),
-          'video_detail': (context) => const Video_Detail(),
+          'video_detail': (context) =>  const Video_Detail(),
         },
       );
   }

@@ -1,6 +1,6 @@
 import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:flutter/material.dart';
-import 'package:media_booster/controller/song_provider.dart';
+import 'package:media_booster/controller/song_controller.dart';
 import 'package:media_booster/utlis/player_list.dart';
 import 'package:provider/provider.dart';
 

@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:media_booster/utlis/player_list.dart';
 
-class VideoPage extends StatefulWidget {
+class VideoPage extends StatelessWidget {
   const VideoPage({Key? key}) : super(key: key);
 
-  @override
-  State<VideoPage> createState() => _VideoPageState();
-}
-
-class _VideoPageState extends State<VideoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
